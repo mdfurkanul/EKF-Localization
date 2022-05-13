@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>custom_stage_worlds</name>
+  <version>0.0.0</version>
+  <description>Custom versions of the default Stage worlds</description>
+
+  <maintainer email="martin.magnusson@oru.se">Martin Magnusson</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+  </export>
+
+</package>

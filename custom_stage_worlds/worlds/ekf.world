@@ -1,0 +1,38 @@
+# simple_pioneer.world - basic world file example using pretty models
+# Authors: Richard Vaughan
+# $Id$
+
+include "pioneer.inc"
+include "map.inc"
+include "sick.inc"
+
+paused 1
+
+# configure the GUI window
+window
+(
+  size [ 1124 490 ] # in pixels
+  scale 33.004   # pixels per meter
+  center [ -4.458  -1.900 ]
+  rotate [ 37.500  -15.500 ]
+  			
+  show_data 1              # 1=on 0=off
+)
+
+# load an environment bitmap
+floorplan
+( 
+  name "cave"
+  size [16.000 16.000 0.800]
+  pose [0.000 0.000 0.000 0.000]
+  bitmap "bitmaps/cave.png"
+)
+
+pioneer2dx_base_no_sonar 
+(
+  # robot_0
+  name "r0"
+  pose [ -7.000 -7.000 0.000 45.000 ] 
+  fancysicklaser( pose [ 0.000 0.000 0.000 0.000 ] ) 
+)
+

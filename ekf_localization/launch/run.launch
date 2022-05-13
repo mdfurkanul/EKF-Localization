@@ -1,0 +1,17 @@
+<launch>
+  <!-- Run stage simulation commands -->
+  <node name="stage" pkg="ekf_localization" type="stage.sh" />
+
+
+ <!-- Start the map server -->
+ <node pkg="map_server" name="map_server" type="map_server" args="$(find ekf_localization)/map/ekf_map.yaml">
+   <param name="frame_id" value="odom" />
+ </node>
+
+ <!-- Start the rviz -->
+ <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ekf_localization)/rviz/config.rviz"/>
+
+ <!-- Run eksf_localization -->
+ <node name="ekf_localization_node" pkg="ekf_localization" type="main.py" />
+
+</launch>

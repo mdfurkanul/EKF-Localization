@@ -1,0 +1,37 @@
+# simple_pioneer.world - basic world file example using pretty models
+# Authors: Richard Vaughan
+# $Id$
+
+include "pioneer.inc"
+#include "map.inc"
+include "sick.inc"
+#include "walle.inc"
+
+paused 0
+
+# configure the GUI window
+window
+(
+  size [ 1124 490 ] # in pixels
+  scale 33.004   # pixels per meter
+  center [ -4.458  -1.900 ]
+  rotate [ 0.000  0.000 ]
+  			
+  show_data 1              # 1=on 0=off
+)
+
+pioneer2dx_base_no_sonar 
+(
+  # robot_0
+  name "Parent"
+  pose [ -7.000 -7.000 0.000 45.000 ] 
+  fancysicklaser( pose [ 0.000 0.000 0.000 0.000 ] ) 
+)
+pioneer2dx_base_no_sonar 
+(
+  # robot_1
+  name "Child"
+  pose [ -5.000 -5.000 0.000 45.000 ] 
+  fancysicklaser( pose [ 0.000 0.000 0.000 0.000 ] ) 
+)
+
