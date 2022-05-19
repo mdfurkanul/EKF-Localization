@@ -9,7 +9,7 @@ roslaunch ekf_localization run.launch
 ```
 To Move the robot use ros teleop_twist_keyboard package
 ```
-rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=my_cmd_vel
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 You can see more details on their page
 
