@@ -1,0 +1,1 @@
+\widehat{P}_{k|k-1} = F_{k}P_{k-1|k-1}F_{k}^{T} + V_{k}QV_{k}^{T}

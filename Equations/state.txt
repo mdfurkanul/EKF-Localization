@@ -1,0 +1,19 @@
+State = \widehat{x}_{k-1| k-1} = \begin{bmatrix}
+ x_{k-1}\\
+ y_{k-1}\\
+ theta_{k-1}\\
+ v_{k-1}\\
+ omega_{k-1}
+\end{bmatrix} = \begin{bmatrix}
+ 0\\
+ 0\\
+ 0\\
+ 0\\
+ 0
+\end{bmatrix}, u_{k-1} = \begin{bmatrix}
+ v_{k-1}\\
+ omega_{k-1}
+\end{bmatrix} = \begin{bmatrix}
+ 0\\
+ 0
+\end{bmatrix}

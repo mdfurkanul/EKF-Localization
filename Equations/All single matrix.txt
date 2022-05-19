@@ -1,0 +1,34 @@
+\widehat{x} = \begin{bmatrix}
+ x + v*T*cos(theta+omega*T)\\
+ y + v*T*sin(theta+omega*T)\\
+ theta+omega*T\\
+ v\\
+omega
+\end{bmatrix}
+
+F = \begin{bmatrix}
+ 1&  0&  -T*v*sin(theta+omega*T)& T*cos(theta+omega*T)& -T^{2}*v*sin(theta+omega*T)\\
+ 0&  1&  T*v*cos(theta+omega*T)&  T*sin(theta+omega*T)&  T^{2}*v*cos(theta+omega*T)\\
+ 0&  0&  1&  0&  T\\
+ 0&  0&  0&  1&  0\\
+ 0&  0&  0&  0&  1\\
+\end{bmatrix}
+
+V = \begin{bmatrix}
+ T*cos(theta+omega*T)&  -T^{2}*v*sin(theta+omega*T)\\
+ T*sin(theta+omega*T)&  T*^{2}*cos(theta+omega*T)\\
+ 0&  T\\
+ 1&  0\\
+ 0&  1\\
+\end{bmatrix}
+
+Q = \begin{bmatrix}
+ sigma\_v^{2}&  0\\
+ 0&  sigma\_omega^{2}\\
+\end{bmatrix}
+
+z_{k} = \begin{bmatrix}
+ odom\_x&  odom\_y&  odom\_theta&  odom\_v&  imu\_theta&  imu\_omega\\
+\end{bmatrix}'
+
+imu\_cov1

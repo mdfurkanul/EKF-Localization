@@ -1,0 +1,1 @@
+State = \widehat{x}_{k| k-1} = f \left(  \widehat{x}_{k-1| k-1}, u_{k} \right)

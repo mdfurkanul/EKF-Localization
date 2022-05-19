@@ -1,0 +1,35 @@
+\begin{bmatrix}
+ x_{t}\\
+ y_{t}\\
+ theta_{t}\\
+ v_{t}\\
+omega_{t}
+\end{bmatrix} = \begin{bmatrix}
+ 1&  0&  0&  0&  0\\
+ 0&  1&  0&  0&  0\\
+ 0&  0&  1&  0&  0\\
+ 0&  0&  0&  0&  0\\
+ 0&  0&  0&  0&  0\\
+\end{bmatrix}\begin{bmatrix}
+ x_{t-1}\\
+ y_{t-1}\\
+ theta_{t-1}\\
+ v_{t-1}\\
+omega_{t-1}
+\end{bmatrix}+\begin{bmatrix}
+ cos(theta_{t-1})T&  0\\
+ sin(theta_{t-1})T&  0\\
+ 0&  T\\
+ 1&  0\\
+ 0&  1\\
+\end{bmatrix}
+\begin{bmatrix}
+ v_{t-1}\\
+omega_{t-1}
+\end{bmatrix}+\begin{bmatrix}
+ W_{t-1}\\
+ W_{t-1}\\
+ W_{t-1}\\
+ W_{t-1}\\
+ W_{t-1}
+\end{bmatrix}

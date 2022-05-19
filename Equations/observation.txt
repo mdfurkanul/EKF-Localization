@@ -1,0 +1,28 @@
+\begin{bmatrix}
+ y_{1}^{t}\\
+ y_{2}^{t}\\
+ y_{3}^{t}\\
+ y_{4}^{t}\\
+ y_{5}^{t}\\
+ y_{6}^{t}
+\end{bmatrix} = \begin{bmatrix}
+ 1&  0&  0&  0&  0\\
+ 0&  1&  0&  0&  0\\
+ 0&  0&  1&  0&  0\\
+ 0&  0&  0&  1&  0\\
+ 0&  0&  1&  0&  0\\
+ 0&  0&  0&  0&  1
+\end{bmatrix}\begin{bmatrix}
+ x_{t}\\
+ y_{t}\\
+ theta_{t}\\
+ v_{t}\\
+ omega_{t}
+\end{bmatrix} + \begin{bmatrix}
+ W_{1}\\
+ W_{2}\\
+ W_{3}\\
+ W_{4}\\
+ W_{5}\\
+ W_{6}
+\end{bmatrix}
