@@ -1,7 +1,7 @@
 # Probabilistic-Project
 Class Project for Probabilistic Project
 
-In the Stage simulation you don't need to change anything. But for gazebo turtlebot make sure the topic name are matched and imu sensor flag is enabled.
+In the Stage simulation, you don't need to change anything. But for gazebo turtlebot make sure the topic name are matched and imu sensor flag is enabled.
 
 To run the projects:
 ```
